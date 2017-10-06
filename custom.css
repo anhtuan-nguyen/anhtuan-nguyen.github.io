@@ -1,0 +1,517 @@
+
+
+/*first part*/
+
+#menu-demo2, #menu-demo2 ul{
+padding:0;
+margin:0;
+list-style:none;
+text-align:center;
+}
+#menu-demo2 li{
+display:inline-block;
+position:relative;
+border-radius:8px 8px 0 0;
+}
+#menu-demo2 ul li{
+display:inherit;
+border-radius:0;
+}
+#menu-demo2 ul li:hover{
+border-radius:0;
+}
+#menu-demo2 ul li:last-child{
+border-radius:0 0 8px 8px;
+}
+#menu-demo2 ul{
+position:absolute;
+z-index: 1000;
+max-height:0;
+left: 0;
+right: 0;
+overflow:hidden;
+-moz-transition: .8s all .3s;
+-webkit-transition: .8s all .3s;
+transition: .8s all .3s;
+}
+#menu-demo2 li:hover ul{
+max-height:15em;
+}
+/* background des liens menus */
+#menu-demo2 li:first-child{
+background-color: #B45F04;
+background-image:-webkit-linear-gradient(top, #B45F04 0%, #B18904 100%);
+background-image:linear-gradient(to bottom, #B45F04 0%, #B18904 100%);
+}
+#menu-demo2 li:nth-child(2){
+background-color: #04B404;
+background-image: -webkit-linear-gradient(top, #04B404 0%, #04B45F 100%);
+background-image:linear-gradient(to bottom, #04B404 0%, #04B45F 100%);
+}
+#menu-demo2 li:nth-child(3){
+background-color: #0040FF;
+background-image:-webkit-linear-gradient(top, #0040FF 0%, #0080FF 100%);
+background-image:linear-gradient(to bottom, #0040FF 0%, #0080FF 100%);
+}
+#menu-demo2 li:last-child{
+background-color: #5F04B4;
+background-image:-webkit-linear-gradient(top, #5F04B4 0%, #8904B1 100%);
+background-image:linear-gradient(to bottom, #5F04B4 0%, #8904B1 100%);
+}
+/* background des liens sous menus */
+#menu-demo2 li:first-child li{
+background:#B18904;
+}
+#menu-demo2 li:nth-child(2) li{
+background:#04B45F;
+}
+#menu-demo2 li:nth-child(3) li{
+background:#0080FF;
+}
+#menu-demo2 li:last-child li{
+background:#8904B1;
+}
+/* background des liens menus et sous menus au survol */
+#menu-demo2 li:first-child:hover, #menu-demo2 li:first-child li:hover{
+background:#B45F04;
+}
+#menu-demo2 li:nth-child(2):hover, #menu-demo2 li:nth-child(2) li:hover{
+background:#04B404;
+}
+#menu-demo2 li:nth-child(3):hover, #menu-demo2 li:nth-child(3) li:hover{
+background:#0040FF;
+}
+#menu-demo2 li:last-child:hover, #menu-demo2 li:last-child li:hover{
+background:#5F04B4;
+}
+/* les a href */
+#menu-demo2 a{
+text-decoration:none;
+display:block;
+padding:8px 32px;
+color:#fff;
+font-family:arial;
+}
+#menu-demo2 ul a{
+padding:8px 0;
+}
+#menu-demo2 li:hover li a{
+color:#fff;
+text-transform:inherit;
+}
+#menu-demo2 li:hover a, #menu-demo2 li li:hover a{
+color:#000;
+}
+
+/*second part*/
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+ 
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+ 
+img.lang {
+  width: 30px;
+  margin-right: 10px;
+  border: 1px solid #585858;
+  box-shadow: 1px 1px 0 #585858, 2px 2px 0 #585858, 3px 3px 3px rgba(0, 0, 0, 0.35);
+}
+
+a#logo > img {
+  width: 120px;
+  height: 52px;
+  margin: 10px 0px 0px 10px;
+  border: 2px solid #585858;
+  box-shadow: 1px 1px 0 #585858, 2px 2px 0 #585858, 3px 3px 3px rgba(0, 0, 0, 0.35);
+}
+
+img.imw1 {
+  width: 60px;
+  margin: 10px 0px 0px 10px;
+  border: 2px solid #585858;
+  box-shadow: 1px 1px 0 #585858, 2px 2px 0 #585858, 3px 3px 3px rgba(0, 0, 0, 0.35);
+}
+
+img.imw2 {
+  width: 100px;
+  margin: 10px 0px 0px 10px;
+  border: 2px solid #585858;
+  box-shadow: 1px 1px 0 #585858, 2px 2px 0 #585858, 3px 3px 3px rgba(0, 0, 0, 0.35);
+}
+
+img.imw3 {
+  width: 140px;
+  margin: 10px 0px 0px 10px;
+  border: 2px solid #585858;
+  box-shadow: 1px 1px 0 #585858, 2px 2px 0 #585858, 3px 3px 3px rgba(0, 0, 0, 0.35);
+}
+
+
+img.imh1 {
+  height: 60px;
+  margin: 10px 0px 0px 10px;
+  border: 2px solid #585858;
+  box-shadow: 1px 1px 0 #585858, 2px 2px 0 #585858, 3px 3px 3px rgba(0, 0, 0, 0.35);
+}
+
+img.imh2 {
+  height: 100px;
+  margin: 10px 0px 0px 10px;
+  border: 2px solid #585858;
+  box-shadow: 1px 1px 0 #585858, 2px 2px 0 #585858, 3px 3px 3px rgba(0, 0, 0, 0.35);
+}
+
+img.imh3 {
+  height: 140px;
+  margin: 10px 0px 0px 10px;
+  border: 2px solid #585858;
+  box-shadow: 1px 1px 0 #585858, 2px 2px 0 #585858, 3px 3px 3px rgba(0, 0, 0, 0.35);
+}
+
+
+img.imh4 {
+  height: 180px;
+  margin: 10px 0px 0px 10px;
+  border: 2px solid #585858;
+  box-shadow: 1px 1px 0 #585858, 2px 2px 0 #585858, 3px 3px 3px rgba(0, 0, 0, 0.35);
+}
+
+img.imh5 {
+  height: 220px;
+  margin: 10px 0px 0px 10px;
+  border: 2px solid #585858;
+  box-shadow: 1px 1px 0 #585858, 2px 2px 0 #585858, 3px 3px 3px rgba(0, 0, 0, 0.35);
+}
+
+img.imh6 {
+  height: 260px;
+  margin: 10px 0px 0px 10px;
+  border: 2px solid #585858;
+  box-shadow: 1px 1px 0 #585858, 2px 2px 0 #585858, 3px 3px 3px rgba(0, 0, 0, 0.35);
+}
+
+img.imh7 {
+  height: 300px;
+  margin: 10px 0px 0px 10px;
+  border: 2px solid #585858;
+  box-shadow: 1px 1px 0 #585858, 2px 2px 0 #585858, 3px 3px 3px rgba(0, 0, 0, 0.35);
+}
+
+img.imh8 {
+  height: 340px;
+  margin: 10px 0px 0px 10px;
+  border: 2px solid #585858;
+  box-shadow: 1px 1px 0 #585858, 2px 2px 0 #585858, 3px 3px 3px rgba(0, 0, 0, 0.35);
+}
+
+img.imh9 {
+  height: 380px;
+  margin: 10px 0px 0px 10px;
+  border: 2px solid #585858;
+  box-shadow: 1px 1px 0 #585858, 2px 2px 0 #585858, 3px 3px 3px rgba(0, 0, 0, 0.35);
+}
+
+
+/* Custom page header */
+.header {
+  color: #585858;
+  /* border-bottom: 1px solid #e5e5e5; */
+  border-bottom: 1px solid #585858;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+  color: #585858;
+  background-color: #585858;
+}
+ 
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  /* border-top: 1px solid #e5e5e5; */
+  border-top: 1px solid #585858;
+}
+ 
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 900px;
+  }
+}
+.container-narrow > hr {
+    margin: 30px 0;
+}
+ 
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  /* border-bottom: 1px solid #e5e5e5; */
+  border: 3px solid #585858;
+  background-color: 'white';
+  font-size: 16px;
+  box-shadow: 1px 1px 0 #585858, 2px 2px 0 #585858, 3px 3px 3px rgba(0, 0, 0, 0.35);
+}
+ 
+.lead {
+  font-size: 16px;
+}
+ 
+figure#moi > img {
+  width: 287px;
+  margin: 0px 0px 0px 0px;
+  border: 3px solid #585858;
+  box-shadow: 1px 1px 0 #585858, 2px 2px 0 #585858, 3px 3px 3px rgba(0, 0, 0, 0.35);
+}
+ 
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+ 
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+/* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 1;
+  }
+}
+
+/* menu */
+
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #menu-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #585858;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#cssmenu #menu-button {
+  display: none;
+}
+#cssmenu {
+  width: auto;
+  border: 3px solid #585858;
+  border-radius: 3px;
+  font-family: 'Oswald', sans-serif;
+  line-height: 1;
+  background: #585858;
+  box-shadow: 1px 1px 0 #585858, 2px 2px 0 #585858, 3px 3px 3px rgba(0, 0, 0, 0.35);
+}
+#cssmenu > ul {
+  background: url('pic/bg.png');
+}
+#cssmenu > ul > li {
+  float: left;
+  color: #585858;
+}
+#cssmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+#cssmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+#cssmenu > ul > li > a {
+  padding: 20px 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #585858;
+  background-color: #585858;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+}
+#cssmenu > ul > li > a:hover,
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li.active > a {
+  color: #848484;
+  background-color: #848484;
+}
+#cssmenu #menu-indicator {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  height: 0;
+  width: 0;
+  border: 5px solid transparent;
+  border-bottom-color: #585858;
+  bottom-color: #585858;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+#cssmenu.small-screen {
+  width: 100%;
+}
+#cssmenu.small-screen > ul,
+#cssmenu.small-screen.align-center > ul {
+  width: 100%;
+  text-align: left;
+}
+#cssmenu.small-screen > ul > li,
+#cssmenu.small-screen.align-center > ul > li {
+  float: none;
+  display: block;
+  border-top: 1px solid #848484;
+  color: #848484;
+}
+#cssmenu.small-screen > ul > li > a {
+  padding: 18px 25px;
+  color: #848484;
+}
+#cssmenu.small-screen > ul > li:after,
+#cssmenu.small-screen > ul > li:before {
+  display: none;
+}
+#cssmenu.small-screen #menu-button {
+  display: block;
+  padding: 18px 25px;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #585858;
+  background-color: #585858;
+  background: url('pic/bg.png');
+}
+#cssmenu.small-screen #menu-button.menu-opened {
+  color: #585858;
+}
+#cssmenu.small-screen #menu-button:after {
+  content: "";
+  position: absolute;
+  right: 25px;
+  top: 19.5px;
+  display: block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border-top: 2px solid #585858;
+  border-bottom: 2px solid #585858;
+  width: 18px;
+  height: 3px;
+  color: #585858;
+}
+#cssmenu.small-screen #menu-button.menu-opened:after {
+  border-top: 2px solid #585858;
+  border-bottom: 2px solid #585858;
+}
+#cssmenu.small-screen #menu-button:before {
+  content: "";
+  position: absolute;
+  right: 25px;
+  top: 29.5px;
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: #585858;
+}
+#cssmenu.small-screen #menu-button.menu-opened:before {
+  background: #585858;
+}
+#cssmenu.small-screen #menu-indicator {
+  display: none;
+}
+
+.liencouleur:link{color: #848484;} 
+.liencouleur:visited{color: #848484;} 
+.liencouleur:active{color: #848484;} 
+.liencouleur:hover{color: #848484;}
+
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
