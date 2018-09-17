@@ -38,16 +38,16 @@
         
 
         <!--FONTAWESOME CSS-->
-        <link href="assets/icons/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> 
+        <link href="assets/icons/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> 
         
 
         <!-- CUSTOM STYLE -->
+        <link href="assets/css/nav.css" rel="stylesheet">
         <link href="assets/css/style.css" rel="stylesheet">
         
 
         <!-- RESPONSIVE CSS-->
         <link href="assets/css/responsive.css" rel="stylesheet">
-
         
         <!-- STYLE SWITCH STYLESHEET ONLY FOR DEMO -->
         <link rel="stylesheet" href="assets/css/demo.css">
@@ -184,68 +184,177 @@
                     </div>
 
                 </div>
-                
+
                 <!-- =========================================
-                         Google Map
-                ===========================================-->
+                   Work experiences
+                ==========================================-->
 
-                 <!--<section class="col s12 m12 l8 section">-->
                     <div class="row">
-	                    
-                        <!-- ========================================
-                         Teaching 
-                        ==========================================-->
-
-                        <div class="section-wrapper z-depth-1">
-                            <div class="section-icon col s12 m12 l2">
-                                <i class="fa fa-slideshare"></i>
-                            </div>
-                            <div class="custom-content col s12 m12 l10 wow fadeIn a1" data-wow-delay="0.0s" >
-                                <h2>Current class </h2>
-                                
-                                <div class="custom-content-wrapper wow fadeIn a2" data-wow-delay="0.0s">
-                                    <h3><a href="http://www.tvu.edu.vn/" style="color: #767270;" target="travinh">Tra Vinh University</a></span></h3>
-                                    <span>06/08/2017 - 24/09/2017 </span>
-                                    <p>Subject: <b>Network Security</b> (IT201)</br>
-                                    Class: <b>ICTV7</b></p>
-                                    
-                                    <span>06/08/2017 - 24/09/2017 </span>
-                                    <p>Subject: <b>Develop web applications with Java</b> (SE403)</br>
-                                    Class: <b>IKTV6</b></p>
+                        <div class="full-portfolio">
+                            <div class="wow fadeIn a1" data-wow-delay="0.1s">
+                                <div class="portfolio-nav section-wrapper z-depth-1">
+                                    <ul>
+                                        <li class="filter" data-filter="all">Show All</li>
+                                        <li class="filter" data-filter=".category-1">Software</li>
+                                        <li class="filter" data-filter=".category-2">Network</li>
+                                        <li class="filter" data-filter=".category-4">Management System</li>
+                                    </ul>
+                                </div>
+                                <div id="loader">
+                                    <div class="loader-icon"></div>
                                 </div>
                                 
-                                <h2>Finished class </h2>
+                                <div class="screenshots" id="portfolio-item" >
+                                    <div class="row">
+                                        <ul class="grid">
+                                            <!-- Portfolio one-->
+                                            <li class="col m6 s1 2 mix category-1">
+                                                <a href="portfolio-full.html" class="sa-view-project-detail" data-action="#project-one">
+                                                    <figure class="more">
+                                                    <img src="assets/images/01.jpg" alt="Screenshot 01" class="">
+                                                        <figcaption>
+                                                            <div class="caption-content">
+                                                                <div class="single_image">
+                                                                    <h2>Vista Schedule</h2>
+                                                                    <p>Best user experience in software for manage schedule</p>
+                                                                </div>							
+                                                            </div>
+                                                        </figcaption>
+                                                    </figure>
+                                                </a>
+                                			</li>
+                                			<!-- Portfolio two-->
+                                            <li class="col m6 s12 mix category-2">
+                                                <a href="portfolio-full.html" class="sa-view-project-detail" data-action="#project-two">
+                                                    <figure class="more">
+                                                        <img src="assets/images/02.jpg" alt="Screenshot 01" class="">
+                                                        <figcaption>
+                                                            <div class="caption-content">
+                                                                <div class="single_image">
+                                                                    <h2>BHD Star Le Van Viet Cinema</h2>
+                                                                    <p>Using online & offline synchronization solution base in VPN </p>
+                                                                </div>				
+                                                            </div>
+                                                        </figcaption>
+                                                    </figure>
+                                                </a>
+                                            </li>
+                                            <!-- Portfolio three-->
+                                            <li class="col m6 s12 mix category-1">
+                                                <a href="portfolio-full.html" class="sa-view-project-detail" data-action="#project-three">
+                                                    <figure class="more">
+                                                    <img src="assets/images/03.jpg" alt="Screenshot 01" class="">
+                                                        <figcaption>
+                                                            <div class="caption-content">
+                                                                <div class="single_image">
+                                                                    <h2>DANET</h2>
+                                                                    <p>First licensed video on demand in Vietnam</p>
+                                                                </div>								
+                                                            </div>
+                                                        </figcaption>
+                                                    </figure>
+                                                </a>
+                                            </li>
+                                            <!-- Portfolio four-->
+                                            <li class="col m6 s12 mix category-2">
+                                                <a href="portfolio-full.html" class="sa-view-project-detail" data-action="#project-four">
+                                                    <figure class="more">
+                                                    <img src="assets/images/04.jpg" alt="Screenshot 01" class="">
+                                                        <figcaption>
+                                                            <div class="caption-content">
+                                                                <div class="single_image">
+                                                                    <h2>BHD Star 3/2 Cinema</h2>
+                                                                    <p>Renovation network system base on FTTH connection.</p>
+                                                                </div>	
+                                                            </div>
+                                                        </figcaption>
+                                                    </figure>
+                                                </a>
+                                            </li>
+                                            <!-- Portfolio five-->
+                                            <li class="col m6 s12 mix category-4">
+                                                <a href="portfolio-full.html" class="sa-view-project-detail" data-action="#project-five">
+                                                    <figure class="more">
+                                                    <img src="assets/images/05.jpg" alt="Screenshot 01" class="">
+                                                        <figcaption>
+                                                            <div class="caption-content">
+                                                                <div class="single_image">
+                                                                    <h2>BHD Star Bitexco Cinema</h2>
+                                                                    <p>The first world class cinema of Company, using auto check-in system and Theatre Management System for manage all halls with only one technician.</p>
+                                                                </div>					
+                                                            </div>
+                                                        </figcaption>
+                                                    </figure>
+                                                </a>
+                                            </li>
+                                            <!-- Portfolio six-->
+                                            <li class="col m6 s12 mix category-2">
+                                                <a href="portfolio-full.html" class="sa-view-project-detail" data-action="#project-six">
+                                                    <figure class="more">
+                                                    <img src="assets/images/06.jpg" alt="Screenshot 01" class="">
+                                                        <figcaption>
+                                                            <div class="caption-content">
+                                                                <div class="single_image">
+                                                                    <h2>BHD Star Thao Dien Cinema</h2>
+                                                                    <p>Using Cloud Management Wifi for public users. Responsibility for over concurrent 500 users.</p>
+                                                                </div>					
+                                                            </div>
+                                                        </figcaption>
+                                                    </figure>
+                                                </a>
+                                            </li>
+                                            <!-- Portfolio seven-->
+                                            <li class="col m6 s12 l6 mix category-2">
+                                                <a href="project.html" class="sa-view-project-detail" data-action="#project-seven">
+                                                    <figure class="more">
+                                                    <img src="assets/images/07.jpg" alt="Screenshot">
+                                                        <figcaption>
+                                                            <div class="caption-content">
+                                                                <div class="single_image">
+                                                                    <h2>BHD Star Quang Trung Cinema</h2>
+                                                                    <p></p>
+                                                                </div>									
+                                                            </div>
+                                                        </figcaption>
+                                                    </figure>
+                                                </a>
+                                            </li>
+                                            <!-- Portfolio eight-->
+                                            <li class="col m6 s12 l6 mix category-4">
+                                                <a href="project.html" class="sa-view-project-detail"  data-action="#project-eight">
+                                                    <figure class="more"> 
+                                                    <img src="assets/images/08.jpg" alt="Screenshot 01">
+                                                        <figcaption>
+                                                            <div class="caption-content ">
+                                                                <div class="single_image">
+                                                                    <h2>Vista Cinema Management System</h2>
+                                                                    <p>
+                                                                    Word class Cinema Management System, is using by over 60% of cinema chain in the world. </p>
+                                                                </div>
+                                                            </div>
+                                                        </figcaption>
+                                                    </figure>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                                 
-                                <div class="custom-content-wrapper wow fadeIn a2" data-wow-delay="0.0s">
-                                    <h3><a href="http://www.tvu.edu.vn/" style="color: #767270;" target="travinh">Tra Vinh University</a></span></h3>
-                                    <span>JUNE 2016 - JUNE 2017 </span>
-                                    <p>Subject: <b>Network Security</b> (IT201)</br>
-                                    Class: <b>ICTV6, IKTV</b></p>
-                                    
-                                    <p>Subject: <b>Develop web applications with Java</b> (SE403)</br>
-                                    Class: <b>ICTV6</b></p>
-                                    
-                                    <p>Subject: <b>Applied informatics</b> (ACC201)</br>
-                                    Class: <b>BKTV7, BCTV8</b></p>
+                                <!-- PROJECT DETAILS WILL BE LOADED HERE -->
+                                <div class="sa-project-gallery-view" id="project-gallery-view"></div>
+                                <div class="back-btn col s12">  
+                                    <a id="back-button" class="btn btn-info waves-effect" href="#" ><i class="fa fa-long-arrow-left"></i> Go Back </a>
                                 </div>
-                                <div class="custom-content-wrapper wow fadeIn a3" data-wow-delay="0.0s">
-                                    <h3><a href="http://www.tnu.edu.vn/" target="thainguyen" style="color: #767270;">Thai Nguyen University</a></span></h3>
-                                    <span>JUNE 2016  - JUNE 2017 </span>
-                                    <p>Subject: <b>Network Security</b></br>
-                                    Class: <b>SKTN11, ICTN11, QTN5</b></p>
-                                    
-                                    <p>Subject: <b>Data structures and Algorithms</b> (CS101)</br>
-                                    Class: <b>SCTN19, SKTN19, ICTN19, QTN15</b></p>
-                                </div>
-                            </div>
+                            </div>                            
                         </div>
-                        
+
+
                         <!-- =======================================
                           portfolio Website
                         ==========================================-->
-
+                        <div class="clear"></div>
                         <div class="section-wrapper z-depth-1 wow fadeIn" data-wow-delay="0.1s">                            
-                            <div class="col s12 m12 l18 website right" >
+                            <div class="col s12 m12 l10 website right" >
                                 <div class="row">
                                     <div class="col s12 m12 l4">
                                        <i class="fa fa-globe" style="font-size: 20px;"> <span><a href="#top">www.anhtuan.it</a></span></i>
@@ -263,8 +372,8 @@
                 </section><!-- end section -->
             </div> <!-- end row -->
         </div>  <!-- end container -->
-    
-        <!--=====================
+        
+ <!--=====================
                 JavaScript
         ===================== -->
         <!-- Jquery core js-->
@@ -277,7 +386,7 @@
         <script src="assets/js/wow.min.js"></script>
         
         <!-- Map api -->
-        <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyCzsk8-VXktBry_wCmMDN1BZAHZ7ruZejI"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?v=3.exp"></script>
         
         <!-- Masonry js-->
         <script src="assets/js/masonry.pkgd.js"></script>

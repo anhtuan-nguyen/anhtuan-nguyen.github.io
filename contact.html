@@ -191,55 +191,45 @@
 
                  <!--<section class="col s12 m12 l8 section">-->
                     <div class="row">
-	                    
-                        <!-- ========================================
-                         Teaching 
+                        <!-- Start map -->
+                        <div class="section-wrapper g-map z-depth-1">
+                            <div id="map"> </div>
+                        </div> 
+                        
+                        <!--=======================================
+                         Contact
                         ==========================================-->
 
-                        <div class="section-wrapper z-depth-1">
+                        <div class="section-wrapper z-depth-1">                            
                             <div class="section-icon col s12 m12 l2">
-                                <i class="fa fa-slideshare"></i>
+                                <i class="fa fa-paper-plane-o"></i>
                             </div>
-                            <div class="custom-content col s12 m12 l10 wow fadeIn a1" data-wow-delay="0.0s" >
-                                <h2>Current class </h2>
+                            <div class="col s12 m12 l10 wow fadeIn a1" data-wow-delay="0.1s">
                                 
-                                <div class="custom-content-wrapper wow fadeIn a2" data-wow-delay="0.0s">
-                                    <h3><a href="http://www.tvu.edu.vn/" style="color: #767270;" target="travinh">Tra Vinh University</a></span></h3>
-                                    <span>06/08/2017 - 24/09/2017 </span>
-                                    <p>Subject: <b>Network Security</b> (IT201)</br>
-                                    Class: <b>ICTV7</b></p>
-                                    
-                                    <span>06/08/2017 - 24/09/2017 </span>
-                                    <p>Subject: <b>Develop web applications with Java</b> (SE403)</br>
-                                    Class: <b>IKTV6</b></p>
+                                <h2>Contact</h2>                                
+                                <div class="contact-form" id="contact">   
+                                    <div class="row">                                   
+                                        <form role="form" id="contactForm" data-toggle="validator">
+                                            <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                            <div class="input-field col s12">
+                                                <label for="name" class="h4">Name *</label>
+                                                <input type="text" class="form-control validate" id="name" required data-error="NEW ERROR MESSAGE">
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <label for="email" class="h4">Email *</label>
+                                                <input type="email" class="form-control validate" id="email"  required>                
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <label for="message" class="h4 ">Message *</label>
+                                                <textarea id="message" class="form-control materialize-textarea validate" required></textarea>           
+                                            </div>
+                                            <button type="submit" id="form-submit" class="btn btn-success">Submit</button>
+                                            <div class="clearfix"></div>                                
+                                        </form>                                     
+                                    </div> 
                                 </div>
-                                
-                                <h2>Finished class </h2>
-                                
-                                <div class="custom-content-wrapper wow fadeIn a2" data-wow-delay="0.0s">
-                                    <h3><a href="http://www.tvu.edu.vn/" style="color: #767270;" target="travinh">Tra Vinh University</a></span></h3>
-                                    <span>JUNE 2016 - JUNE 2017 </span>
-                                    <p>Subject: <b>Network Security</b> (IT201)</br>
-                                    Class: <b>ICTV6, IKTV</b></p>
-                                    
-                                    <p>Subject: <b>Develop web applications with Java</b> (SE403)</br>
-                                    Class: <b>ICTV6</b></p>
-                                    
-                                    <p>Subject: <b>Applied informatics</b> (ACC201)</br>
-                                    Class: <b>BKTV7, BCTV8</b></p>
-                                </div>
-                                <div class="custom-content-wrapper wow fadeIn a3" data-wow-delay="0.0s">
-                                    <h3><a href="http://www.tnu.edu.vn/" target="thainguyen" style="color: #767270;">Thai Nguyen University</a></span></h3>
-                                    <span>JUNE 2016  - JUNE 2017 </span>
-                                    <p>Subject: <b>Network Security</b></br>
-                                    Class: <b>SKTN11, ICTN11, QTN5</b></p>
-                                    
-                                    <p>Subject: <b>Data structures and Algorithms</b> (CS101)</br>
-                                    Class: <b>SCTN19, SKTN19, ICTN19, QTN15</b></p>
-                                </div>
-                            </div>
-                        </div>
-                        
+                            </div>                            
+                         </div>
                         <!-- =======================================
                           portfolio Website
                         ==========================================-->
