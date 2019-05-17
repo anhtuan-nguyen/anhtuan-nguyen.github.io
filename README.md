@@ -1,3 +1,3 @@
 # anhtuan-nguyen.github.io
 
-Files for www.anhtuan.edu.vn
+Files for anhtuan.edu.vn
